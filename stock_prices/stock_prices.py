@@ -5,8 +5,14 @@ import argparse
 def find_max_profit(prices):
     # create variable to store max profit
     # loop through prices list starting from 1 index
-    # find profit 
-  pass
+    # find profit
+    max_profit = 0
+    for i in prices[1:]:
+        for j in prices[i:]:
+            temp_val = prices[i] - prices[i - 1]
+            if max_profit < temp_val:
+                max_profit = temp_val
+            return max_profit
 
 
 if __name__ == '__main__':
