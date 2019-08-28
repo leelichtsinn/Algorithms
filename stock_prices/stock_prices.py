@@ -3,6 +3,9 @@
 import argparse
 
 def find_max_profit(prices):
+    # create variable to store max profit
+    # loop through prices list starting from 1 index
+    # find profit 
   pass
 
 
